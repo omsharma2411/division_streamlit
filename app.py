@@ -13,8 +13,8 @@ def main():
   </div>
   """
   st.markdown(html_temp,unsafe_allow_html=True)
-  num1 = st.number_input("Number 1")
-  num2 = st.number_input("Number 2")
+  num1 = st.number_input("Number 1", value =1)
+  num2 = st.number_input("Number 2", value =1)
   result = num1 / num2
   st.success('The output is {}'.format(result))
   if st.button("Made By"):
